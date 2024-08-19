@@ -1,0 +1,49 @@
+---
+import Cards from '~/components/widgets/Cards.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Ethcon Archives',
+};
+
+const data = {
+  '2023': {
+    sponsors: []
+  }
+}
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline="2023">
+    <Fragment slot="title"> Proof of Sharing </Fragment>
+
+    <Fragment slot="subtitle">
+      Supporting the open-source movement as a non profit Ethereum developer conference, Ethcon Korea have started its
+      journey since 2019. We as organizers believe that Ethereum is more than just a technical solution - it is a
+      community. <br />
+      <br /> Our mission is to empower local communities by bridging the gap between Korea and the world through the promotion
+      of decentralized protocols, tools, and culture. Our commitment to fostering innovation and community continues with
+      this Hackathon and conference, and we look forward to supporting the growth of the Ethereum ecosystem here.
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Cards
+    title="Sponsors"
+    columns={4}
+    items={data[2023].sponsors.map((sponsor) => ({
+      title: sponsor,
+    }))}
+  />
+  <Cards
+    title="Sponsors"
+    columns={4}
+    items={data[2023].sponsors.map((sponsor) => ({
+      title: sponsor,
+    }))}
+  />
+</Layout>

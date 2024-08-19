@@ -1,35 +1,29 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Ethcon Korea 2024
+  site: 'https://2024.ethcon.kr'
   base: '/'
   trailingSlash: false
-
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
-
+# 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Ethcon Korea 2024
+    template: '%s — Ethcon Korea 2024'
+  description: 'Join us at Ethcon Korea from October 18th to 20th, 2024, for a dynamic gathering of developers and visionaries.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Ethcon Korea 2024
     images:
       - url: '~/assets/images/default.png'
         width: 1200
-        height: 628
+        height: 630
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@ethconkr'
+    site: '@ethconkr'
     cardType: summary_large_image
-
-i18n:
-  language: en
-  textDirection: ltr
 
 apps:
   blog:

@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -28,15 +28,19 @@ export const headerData = {
       ],
     },
     {
-      text: 'Contributors',
-      href: getPermalink('/'),
+      text: 'Speak at Ethcon',
+      href: getPermalink('/apply-as-a-speaker'),
     },
-    {
-      text: 'About',
-      href: getPermalink('/about'),
-    },
+    // {
+    //   text: 'Contributors',
+    //   href: getPermalink('/'),
+    // },
+    // {
+    //   text: 'About',
+    //   href: getPermalink('/about'),
+    // },
   ],
-  actions: [{ text: 'My Ethcon(coming soon) ↗', href: 'https://github.com/ethcon-kr/my-ethcon', target: '_blank' }],
+  actions: [{ text: 'My Ethcon(coming soon) ↗', href: '#', target: '' }],
 };
 
 export const footerData = {

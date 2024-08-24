@@ -2,7 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "./node_modules/.bin/astro dev",
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:4321",
+      "webRoot": "${workspaceFolder}",
+    },
+    {
+      "command": "./node_modules/.bin/astro dev --host 0.0.0.0",
       "name": "Development server",
       "request": "launch",
       "type": "node-terminal"

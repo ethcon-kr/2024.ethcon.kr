@@ -1,6 +1,16 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/astronomer/devcontainer-features/astro-cli:1": {}
-  }
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "unifiedjs.vscode-mdx",
+        "arcanis.vscode-zipfs"
+      ]
+    }
+  },
+  "postStartCommand": "yarn"
 }

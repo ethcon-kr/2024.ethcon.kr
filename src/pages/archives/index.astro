@@ -1,0 +1,203 @@
+---
+import Archive from '~/components/widgets/Archive.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Ethcon Archives',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Archive
+    year={2023}
+    title={'Proof of Sharing'}
+    description={`
+          Supporting the open-source movement as a non profit Ethereum developer conference, Ethcon Korea have started
+          its journey since 2019. We as organizers believe that Ethereum is more than just a technical solution - it is
+          a community.
+
+          Our mission is to empower local communities by bridging the gap between Korea and the world through the
+          promotion of decentralized protocols, tools, and culture. Our commitment to fostering innovation and community
+          continues with this Hackathon and conference, and we look forward to supporting the growth of the Ethereum
+          ecosystem here.`}
+    sponsors={[
+      'Optimism',
+      'Taiko',
+      'Axelar',
+      'zkSync',
+      'Polygon',
+      'Starknet',
+      'Spark',
+      'Linea',
+      'Metamask',
+      '4337Mafia',
+      'Kyberswap',
+      'TIP',
+      'Chailink',
+      'Hashed',
+      'Ubiquity DAO',
+      'Dodo',
+      'Node Guardians',
+      'Sooho',
+      'Kroma',
+      'Ethereum Foundation',
+    ]}
+    partners={[
+      'ishDAO',
+      'ATXDAO',
+      'SojuDAO',
+      'Four Pillars',
+      'Dallem',
+      'Exilist',
+      'Market Across',
+      'Coza',
+      'Coinness.com',
+      'DCent',
+      'FingerLabs',
+      'Original Beer Company',
+      '1k(x)',
+      'Electric Capital',
+      'BigBrainHolding',
+      'KX',
+      'Kakao Ventures',
+      'Hashed',
+      'LongdashX',
+      'ACBDE',
+      'SK Inc.',
+      'Arcane',
+      'Nonce Classic',
+      'IVC',
+      'Outlier Ventures',
+      'ODA Capital',
+      'ROK Capital',
+      'Vista Labs',
+      'Presto',
+      'Builders Tribe',
+      'Fracton',
+    ]}
+    organizers={[
+      'Jenna Park(Lead Organizer)',
+      'Daehyun Paik',
+      'Daniel Jee',
+      'Jihoon Song',
+      'Jinyoung Yoo',
+      'Lena Kang',
+      'Ryu Jjam',
+      'Sujin Hwang',
+      'Suzy Nam',
+      'Taewan Kim',
+      'Taeyeon Kim',
+      'Yeongin Lee',
+      'Wooster Han',
+    ]}
+  />
+  <Archive
+    year={2020}
+    title={'Explore the Network of Opportunities!'}
+    description=""
+    donors={['류짬', '다니엘', 'TY', 'V!', '이기호', '정금산', '현수영', 'Jake', '윤재호', '정희진']}
+    organizers={[
+      '류짬(Lead Organizer)',
+      '권영운',
+      '김동욱',
+      '김상필',
+      '김예인',
+      '이기호',
+      '이영인',
+      '임완섭',
+      '장진호',
+      '장재린',
+      '정금산',
+      '정순용',
+      '조현기',
+      '지명근',
+      '하시은',
+      '한준희',
+      '허강욱',
+      '홍종화',
+    ]}
+  />
+  <Archive
+    year={2019}
+    title={'Discover the Light'}
+    description={`Ethereum is supported and developed by many developers who believe in decentralization and the value of open source. Although there are many who also believe in such philosophy in Korea, the developers’ community fails to act as a leading role due to being severed from the global developers’ community.
+
+Similarly, the results of some studies fail to come to light due to the lack of appropriate windows and venues for them to be shown to the public. As such, following the precedent set by the Python community when they successfully organized Python Korea for several years, we plan to organize a community-driven conference for Korean Ethereum developers, and by Korean Ethereum developers.
+
+Through ethcon Korea, we hope to expand the Korean Ethereum developers’ community, and shed into light the many different contents that were researched and developed by Korean Ethereum Community, whether they were unknown to the public or developed on their own.
+
+Furthermore, ethcon Korea hopes to act as a chapter where we could share and co-operate with each other’s research and development, resulting in the Korean Ethereum Community to have a positive impact on the Global Ethereum Community. Following Ethereum’s philosophy of decentralization, we aim to have all progress, including preparation, to be made as a community.`}
+    donors={[
+      '임완섭',
+      '아톰릭스',
+      '지명근',
+      '하시은',
+      'DRSV Labs',
+      '백대현',
+      '페어스퀘어랩',
+      '신진환',
+      '김관래',
+      '김수훈',
+      '강하다',
+      '김흥범',
+      '류영훈',
+      'Skytale Capital',
+      '김휘경',
+    ]}
+    sponsors={[
+      'Berith',
+      'Cosmic BC',
+      'Crypto Quant',
+      'WeGo',
+      'Sooho',
+      'Atomrigs Consultings',
+      'Nonce',
+      'Haechi Labs',
+      'Planetarium',
+      'Metadium',
+      'Skale',
+      'DCent',
+      'Penta Security',
+      'Stake.fish',
+    ]}
+    partners={[
+      'The BChain',
+      'Coinvoice',
+      'The Blockpost',
+      'Decenter',
+      'HKBNews',
+      'ZDNet Korea',
+      'Coindesk Korea',
+      '한경닷컴',
+      'D.street',
+      'JoinD',
+      'News1',
+    ]}
+    organizers={[
+      '임완섭(Lead Organizer)',
+      '고석호',
+      '김기명',
+      '김영근(자문)',
+      '김지윤',
+      '김흥범',
+      '김희연',
+      '류영훈',
+      '박정원',
+      '배경일',
+      '배희성',
+      '손예슬',
+      '신진환',
+      '오영택',
+      '이준희',
+      '장중혁',
+      '장진호',
+      '전민규',
+      '정우현',
+      '지명근',
+      '최지영',
+      '홍종화',
+    ]}
+  />
+</Layout>

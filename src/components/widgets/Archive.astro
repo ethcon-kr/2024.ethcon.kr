@@ -1,0 +1,71 @@
+---
+import Cards from '~/components/widgets/Cards.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+interface Props {
+  year: number;
+  title: string;
+  description: string;
+  sponsors?: string[];
+  partners?: string[];
+  donors?: string[];
+  organizers?: string[];
+}
+
+const { year, title, description, sponsors, partners, donors, organizers } = Astro.props;
+---
+
+<Hero tagline={year.toString()}>
+  <Fragment slot="title"> {title} </Fragment>
+
+  <Fragment slot="subtitle">
+    {description}
+  </Fragment>
+</Hero>
+
+<!-- Features2 Widget ************** -->
+
+{
+  donors && (
+    <Cards
+      title="Donors"
+      columns={4}
+      items={donors.map((name) => ({
+        title: name,
+      }))}
+    />
+  )
+}
+{
+  sponsors && (
+    <Cards
+      title="Sponsors"
+      columns={4}
+      items={sponsors.map((name) => ({
+        title: name,
+      }))}
+    />
+  )
+}
+{
+  partners && (
+    <Cards
+      title="Partners"
+      columns={4}
+      items={partners.map((name) => ({
+        title: name,
+      }))}
+    />
+  )
+}
+{
+  organizers && (
+    <Cards
+      title="Organizers"
+      columns={4}
+      items={organizers.map((name) => ({
+        title: name,
+      }))}
+    />
+  )
+}

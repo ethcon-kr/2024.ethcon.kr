@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
+import Hero from "../components/widgets/Hero.astro";
 
 const metadata = {
   title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
@@ -57,4 +58,13 @@ const metadata = {
       },
     ]}
   />
+  
+  <Hero tagline="Ethcon 2024: Capture the Flag"
+        title="Test and Raise your skills"
+        subtitle="The CTF is coming to {Event Place} on Oct 19. Test your skills in this Ethereum-themed capture the flag challenge! Solve puzzles, exploit smart contracts, and secure your position on the leaderboard."
+        actions={[
+          { variant: 'primary', text: 'Register CTF', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+          { text: 'CTF Site', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+        ]}
+        image={{ src: '~/assets/images/hero-ctf.png', alt: 'Ethcon KR Ignite your Cypherpunk Vision' }}/>
 </Layout>

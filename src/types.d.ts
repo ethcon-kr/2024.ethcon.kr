@@ -141,6 +141,10 @@ export interface Item {
   image?: Image;
 }
 
+export interface TimelineItem extends Item {
+  time?: string;
+}
+
 export interface Price {
   title?: string;
   subtitle?: string;
@@ -268,6 +272,13 @@ export interface Steps extends Omit<Headline, 'classes'>, Widget {
     icon?: string;
     classes?: Record<string, string>;
   }>;
+  callToAction?: string | CallToAction;
+  image?: string | Image;
+  isReversed?: boolean;
+}
+
+export interface TimeTable extends Steps {
+  items: Array<TimelineItem>;
   callToAction?: string | CallToAction;
   image?: string | Image;
   isReversed?: boolean;

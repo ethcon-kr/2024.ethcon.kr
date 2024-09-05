@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
 
 const metadata = {
   title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
@@ -19,7 +20,7 @@ const metadata = {
     title="Ignite your Cypherpunk Vision!"
     subtitle="Join us at Ethcon Korea from October 18th to 20th, 2024, for a dynamic gathering of developers and visionaries. In its fourth year, this volunteer-driven conference will spotlight the community’s commitment to a cypherpunk future. Share your projects and collaborate with others to push back against the encroaching dystopia.<br/><br/>Together, let's craft a resilient digital future."
     actions={[
-      { variant: 'primary', text: 'Apply as a speaker', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { variant: 'primary', text: 'Apply as a speaker', href: '/apply-as-a-speaker', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Get a ticket(coming soon)', href: '#', icon: 'tabler:square-rounded-arrow-right' },
     ]}
     image={{ src: '~/assets/images/hero2-image.png', alt: 'Ethcon KR Ignite your Cypherpunk Vision' }}
@@ -36,24 +37,44 @@ const metadata = {
         description:
           'Dive into the world of Ethereum development! Join industry leaders, developers, and enthusiasts as we explore the latest advancements, best practices, and emerging trends in the Ethereum ecosystem.',
         icon: 'tabler:code',
+        callToAction: {
+          text: 'Apply as a speaker',
+          variant: 'secondary',
+          href: '/apply-as-a-speaker',
+        }
       },
       {
         title: 'CTF (Capture the Flag)',
         description:
-          'Test your skills in our Ethereum-themed Capture the Flag challenge! Solve puzzles, exploit smart contracts, and secure your position on the leaderboard.',
+          'Test your skills in our Ethereum-focused Capture the Flag challenge! Solve puzzles, exploit smart contracts, and secure your position on the leaderboard. Are you up for the challenge?',
         icon: 'tabler:flag',
+        callToAction: {
+          text: 'Apply as a hacker(coming soon)',
+          variant: 'secondary',
+          // href: '#',
+        }
       },
       {
         title: 'Job Clinic',
         description:
           'Get personalized career advice from industry experts at the Ethereum Job Clinic! Learn how to advance your career and make an impact in the Ethereum ecosystem.',
         icon: 'tabler:briefcase',
+        callToAction: {
+          text: 'More details',
+          variant: 'secondary',
+          href: '/schedules/day1',
+        }
       },
       {
-        title: 'Golden Bell Challenge',
+        title: 'Crypto Golden Bell Quiz',
         description:
           'Participate in the Ethereum Golden Bell Challenge! Answer questions, solve problems, and stand a chance to win exclusive prizes.',
         icon: 'tabler:trophy',
+        callToAction: {
+          text: 'Join the competition(coming soon)',
+          variant: 'secondary',
+          // href: '#',
+        }
       },
     ]}
   />

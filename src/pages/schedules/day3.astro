@@ -1,0 +1,75 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import TimeTable from '~/components/widgets/TimeTable.astro';
+
+const metadata = {
+  title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <!-- Hero Section -->
+  <Hero
+    subtitle="Big Place Gangnam, October 20th"
+    tagline="Day 3 - Conference"
+    title="Ethcon Korea 2024"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Apply as a speaker',
+        href: '/apply-as-a-speaker',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+    ]}
+  />
+  <TimeTable
+    id="conference"
+    title="Time Table"
+    items={[
+      {
+        time: '09:30 AM',
+        title: 'Registration',
+        description: `Join us to register and set up for the event.`,
+      },
+      {
+        time: '10:30 AM',
+        title: `Keynote`,
+      },
+      {
+        time: '11:00 AM',
+        title: `Talks (Part 1)`,
+        description: `Detailed agenda will be announced.`,
+      },
+      {
+        time: '01:00 PM',
+        title: `Lunch`,
+        description: `Take a break for lunch and recharge before the afternoon session.`,
+      },
+      {
+        time: '02:00 PM',
+        title: `Talks (Part 2)`,
+        description: `Detailed agenda will be announced.`,
+      },
+      {
+        time: '03:30 PM',
+        title: `Break`,
+      },
+      {
+        time: '04:00 PM',
+        title: `Talks (Part 3)`,
+        description: `Detailed agenda will be announced.`,
+      },
+      {
+        time: '06:00 PM',
+        title: `Closing Remarks`,
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+</Layout>

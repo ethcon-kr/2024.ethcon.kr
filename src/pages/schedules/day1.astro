@@ -1,0 +1,97 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features3.astro';
+import TimeTable from '~/components/widgets/TimeTable.astro';
+
+const metadata = {
+  title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <!-- Hero Section -->
+  <Hero
+    subtitle="Nonce Genesis(1F), October 18th , 2024 - 6PM ~ 10PM"
+    tagline="Day 1 - Job Clinic"
+    title="Connect with leaders in Ethereum ecosystem and boost your career."
+    actions={[
+      { variant: 'primary', text: 'Submit my resume', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Be a mentor', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+    ]}
+  />
+  <!-- Features Section -->
+  <Features
+    id="day1-job-clinic"
+    columns={4}
+    items={[
+      {
+        title: 'Panel talks on Web2 to Web3 transitions',
+        description:
+          'Hear from Web3 experts about the challenges and opportunities when shifting from traditional software development to Web3 development.',
+        icon: 'tabler:transition-right',
+      },
+      {
+        title: 'Mock interviews and resume reviews',
+        description:
+          'Get hands-on experience with mock interviews conducted by experienced Ethereum developers, and receive valuable feedback on your resume to stand out in the ecosystem.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Latest Ethereum industry trends',
+        description:
+          'Stay updated on the latest technological advancements, trends, and innovations in Ethereum, directly from leaders and innovators in the community.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Networking opportunities',
+        description:
+          'Connect with like-minded professionals, recruiters, and thought leaders to expand your network and explore career opportunities in Ethereum.',
+        icon: 'tabler:users',
+      },
+    ]}
+  />
+  <TimeTable
+    id="cgb"
+    title="Time Table"
+    items={[
+      {
+        time: '05:30 PM',
+        title: `Registration Opens`,
+        description: ``,
+        icon: 'tabler:beer',
+      },
+      {
+        time: '06:00 PM',
+        title: `Opening Remarks`,
+        description: ``,
+        icon: 'tabler:beer',
+      },
+      {
+        time: '06:30 PM',
+        title: 'Panel talks',
+        icon: 'tabler:transition-right',
+      },
+      {
+        time: '07:00 PM',
+        title: 'Mock interviews and resume reviews',
+        icon: 'tabler:user-check',
+      },
+      {
+        time: '09:00 PM',
+        title: 'Networking',
+        icon: 'tabler:users',
+      },
+      {
+        time: '09:00 PM',
+        title: 'Closing',
+        icon: 'tabler:users',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+</Layout>

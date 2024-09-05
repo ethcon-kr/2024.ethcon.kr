@@ -3,8 +3,29 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Home',
-      href: getPermalink('/'),
+      text: 'Speak at Ethcon',
+      href: getPermalink('/apply-as-a-speaker'),
+    },
+    {
+      text: 'Schedules',
+      links: [
+        {
+          text: 'Day 1 - Job Clinic',
+          href: getPermalink('/schedules/day1'),
+        },
+        {
+          text: 'Day 2 - CTF & Quiz',
+          href: getPermalink('/schedules/day2'),
+        },
+        {
+          text: 'Day 3 - Conference',
+          href: getPermalink('/schedules/day3'),
+        },
+      ],
+    },
+    {
+      text: 'Contribute',
+      href: getPermalink('/contribute'),
     },
     {
       text: 'Archives',
@@ -26,10 +47,6 @@ export const headerData = {
           href: 'https://2019.ethcon.kr',
         },
       ],
-    },
-    {
-      text: 'Speak at Ethcon',
-      href: getPermalink('/apply-as-a-speaker'),
     },
     // {
     //   text: 'Contributors',
@@ -80,5 +97,5 @@ export const footerData = {
     // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
-  footNote:  "© 2024 Ethcon Korea. All rights reserved."
+  footNote: '© 2024 Ethcon Korea. All rights reserved.',
 };

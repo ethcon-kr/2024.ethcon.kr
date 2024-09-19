@@ -74,7 +74,7 @@ export const footerData = {
       title: 'Resources',
       links: [
         { text: 'Github', href: 'https://github.com/ethcon-kr' },
-        { text: 'Twitter', href: 'https://x.com/ethcon-kr' },
+        { text: 'Twitter', href: 'https://x.com/ethconkr' },
         { text: 'Blog', href: 'https://blog.ethcon.kr' },
         { text: 'Changelog', href: 'https://github.com/ethcon-kr/2024.ethcon.kr' },
       ],

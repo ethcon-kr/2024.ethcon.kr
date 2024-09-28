@@ -14,7 +14,7 @@ export const headerData = {
           href: getPermalink('/schedules/day1'),
         },
         {
-          text: 'Day 2 - CTF & Quiz',
+          text: 'Day 2 - CTF',
           href: getPermalink('/schedules/day2'),
         },
         {

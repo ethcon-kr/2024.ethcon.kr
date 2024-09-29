@@ -1,9 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero2 from '~/components/widgets/Hero2.astro';
-import Features from '~/components/widgets/Features.astro';
-import Steps from '~/components/widgets/Steps.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Button from '~/components/ui/Button.astro';
 
 const metadata = {
   title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
@@ -20,61 +21,95 @@ const metadata = {
     title="Ignite your Cypherpunk Vision!"
     subtitle="Join us at Ethcon Korea from October 18th to 20th, 2024, for a dynamic gathering of developers and visionaries. In its fourth year, this volunteer-driven conference will spotlight the community’s commitment to a cypherpunk future. Share your projects and collaborate with others to push back against the encroaching dystopia.<br/><br/>Together, let's craft a resilient digital future."
     actions={[
-      { variant: 'primary', text: 'Apply as a speaker', href: '/apply-as-a-speaker', icon: 'tabler:square-rounded-arrow-right' },
+      {
+        variant: 'primary',
+        text: 'Apply as a speaker',
+        href: '/apply-as-a-speaker',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
       { text: 'Get a ticket(coming soon)', href: '#', icon: 'tabler:square-rounded-arrow-right' },
     ]}
     image={{ src: '~/assets/images/hero2-image.png', alt: 'Ethcon KR Ignite your Cypherpunk Vision' }}
   />
-
-  <!-- Features Section -->
-  <Features
-    id="features"
-    tagline="What to Expect"
-    title="Engage, Learn, and Innovate"
-    items={[
+  <Hero
+    title="Schedule"
+    subtitle=""
+    content=`<div class="flex justify-center">
+    <iframe
+        id="luma-iframe"
+        src="https://lu.ma/embed/calendar/cal-d036hrH6SYVn0vl/events?"
+        width="100%"
+        height="720"
+        class="border border-gray-300 rounded"
+        allowfullscreen="true"
+        aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>`
+  />
+  <Hero
+    tagline="Day 1"
+    title="Job Clinic"
+    subtitle=""
+    content=`<iframe
+  src="https://lu.ma/embed/event/evt-tx5gzvLhoEZO4vr/simple"
+  width="100%"
+  height="450"
+  frameborder="0"
+  style="border: 1px solid #bfcbda88; border-radius: 4px;"
+  allowfullscreen=""
+  aria-hidden="false"
+  tabindex="0"
+></iframe>`
+  />
+  <Hero
+    tagline="Day 2"
+    title="CTF"
+    subtitle=""
+    content=`<iframe
+  src="https://lu.ma/embed/event/evt-rEvSenG6MnNc3um/simple"
+  width="100%"
+  height="450"
+  frameborder="0"
+  style="border: 1px solid #bfcbda88; border-radius: 4px;"
+  allowfullscreen=""
+  aria-hidden="false"
+  tabindex="0"
+></iframe>`
+  />
+  <Hero
+    tagline="Day 3"
+    title="Conference"
+    subtitle=""
+    content=`<iframe
+  src="https://lu.ma/embed/event/evt-03qXTO2evAfLiem/simple"
+  width="100%"
+  height="450"
+  frameborder="0"
+  style="border: 1px solid #bfcbda88; border-radius: 4px;"
+  allowfullscreen=""
+  aria-hidden="false"
+  tabindex="0"
+></iframe>`
+  />
+  <Headline title="Donation" subtitle="0xe2435548A9cdA5be4B00Da8eCBd47304Cd5c53bc" />
+  <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
+    <div class="flex w-full sm:w-auto">
+      <Button class="w-full sm:mb-0" variant="primary" text="Please submit your transaction hash" />
+    </div>
+  </div>
+  <Brands
+    title="Sponsors"
+    subtitle=""
+    icons={[]}
+    images={[
       {
-        title: 'Ethereum Developer Conference',
-        description:
-          'Dive into the world of Ethereum development! Join industry leaders, developers, and enthusiasts as we explore the latest advancements, best practices, and emerging trends in the Ethereum ecosystem.',
-        icon: 'tabler:code',
-        callToAction: {
-          text: 'Apply as a speaker',
-          variant: 'secondary',
-          href: '/apply-as-a-speaker',
-        }
+        src: '~/assets/images/scroll-logo.png',
+        alt: 'Scroll',
       },
       {
-        title: 'CTF (Capture the Flag)',
-        description:
-          'Test your skills in our Ethereum-focused Capture the Flag challenge! Solve puzzles, exploit smart contracts, and secure your position on the leaderboard. Are you up for the challenge?',
-        icon: 'tabler:flag',
-        callToAction: {
-          text: 'Apply as a hacker(coming soon)',
-          variant: 'secondary',
-          // href: '#',
-        }
-      },
-      {
-        title: 'Job Clinic',
-        description:
-          'Get personalized career advice from industry experts at the Ethereum Job Clinic! Learn how to advance your career and make an impact in the Ethereum ecosystem.',
-        icon: 'tabler:briefcase',
-        callToAction: {
-          text: 'More details',
-          variant: 'secondary',
-          href: '/schedules/day1',
-        }
+        src: '~/assets/images/zircuit-logo.png',
+        alt: 'Zircuit',
       },
     ]}
   />
-  <p align="middle">
-  <iframe
-  src="https://lu.ma/embed/calendar/cal-d036hrH6SYVn0vl/events?"
-  width="800"
-  height="800"
-  style="border: 1px solid #bfcbda88; border-radius: 4px;"
-  allowfullscreen="true"
-  aria-hidden="false"
-  tabindex="0"
-></iframe></p>
 </Layout>

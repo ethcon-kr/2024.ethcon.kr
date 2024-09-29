@@ -1,5 +1,5 @@
 site:
-  name: Ethcon Korea 2024
+  name: Ethcon Korea
   site: 'https://2024.ethcon.kr'
   base: '/'
   trailingSlash: false

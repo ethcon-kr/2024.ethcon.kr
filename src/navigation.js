@@ -3,30 +3,34 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Speak at Ethcon',
-      href: getPermalink('/apply-as-a-speaker'),
+      text: '2024',
+      href: getPermalink('/'),
     },
-    {
-      text: 'Schedules',
-      links: [
-        {
-          text: 'Day 1 - Job Clinic',
-          href: getPermalink('/schedules/day1'),
-        },
-        {
-          text: 'Day 2 - CTF',
-          href: getPermalink('/schedules/day2'),
-        },
-        {
-          text: 'Day 3 - Conference',
-          href: getPermalink('/schedules/day3'),
-        },
-      ],
-    },
-    {
-      text: 'Contribute',
-      href: getPermalink('/contribute'),
-    },
+    // {
+    //   text: 'Speak at Ethcon',
+    //   href: getPermalink('/apply-as-a-speaker'),
+    // },
+    // {
+    //   text: 'Schedules',
+    //   links: [
+    //     {
+    //       text: 'Day 1 - Job Clinic',
+    //       href: getPermalink('/schedules/day1'),
+    //     },
+    //     {
+    //       text: 'Day 2 - CTF & Quiz',
+    //       href: getPermalink('/schedules/day2'),
+    //     },
+    //     {
+    //       text: 'Day 3 - Conference',
+    //       href: getPermalink('/schedules/day3'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Contribute',
+    //   href: getPermalink('/contribute'),
+    // },
     {
       text: 'Archives',
       links: [
@@ -57,7 +61,7 @@ export const headerData = {
     //   href: getPermalink('/about'),
     // },
   ],
-  actions: [{ text: 'My Ethcon(coming soon) ↗', href: '#', target: '' }],
+  actions: [{ text: 'Register', href: 'https://lu.ma/ethcon-kr', target: '_blank' }],
 };
 
 export const footerData = {

@@ -242,7 +242,7 @@ export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {
   icons?: Array<string>;
-  images?: Array<Image>;
+  images?: Array<Image & { height?: number }>;
 }
 
 export interface Features extends Omit<Headline, 'classes'>, Widget {

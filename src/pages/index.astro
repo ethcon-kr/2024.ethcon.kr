@@ -5,6 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Brands from '~/components/widgets/Brands.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Button from '~/components/ui/Button.astro';
+import TimeTable from '~/components/widgets/TimeTable.astro';
 
 const metadata = {
   title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
@@ -61,6 +62,47 @@ const metadata = {
   tabindex="0"
 ></iframe>`
   />
+  <TimeTable
+    id="cgb"
+    tagline='Nonce Salon(1F), October 18th(Fri) , 2024'
+    subtitle=`Connect with leaders in Ethereum ecosystem and boost your career.`
+    title="Job Clinic"
+    items={[
+      {
+        time: '05:30 PM',
+        title: `Registration Opens`,
+        description: ``,
+        icon: 'tabler:beer',
+      },
+      {
+        time: '06:00 PM',
+        title: `Opening Remarks`,
+        description: ``,
+        icon: 'tabler:beer',
+      },
+      {
+        time: '06:30 PM',
+        title: 'Panel talks',
+        icon: 'tabler:transition-right',
+      },
+      {
+        time: '07:00 PM',
+        title: 'Mock interviews and resume reviews',
+        icon: 'tabler:user-check',
+      },
+      {
+        time: '09:00 PM',
+        title: 'Networking',
+        icon: 'tabler:users',
+      },
+      {
+        time: '09:00 PM',
+        title: 'Closing',
+        icon: 'tabler:users',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
   <Hero
     tagline="Day 2"
     title="CTF"
@@ -76,6 +118,58 @@ const metadata = {
   tabindex="0"
 ></iframe>`
   />
+  <TimeTable
+  id="ctf"
+  tagline='Nonce Salon(1F), October 19th(SAT) , 2024'
+  title="Capture the Flag"
+  subtitle=`Test your ability to analyze wallets and transactions on Ethereum. Participants analyze compromised wallets or transactions to trace the attacker's actions and identify the methods used or the cause of the breach.`
+  items={[
+    {
+      time: '09:00 AM',
+      title: 'Registration & Setup',
+      description: `Join us to register and set up your environment for the CTF.`,
+      icon: 'tabler:clipboard-check',
+    },
+    {
+      time: '09:30 AM',
+      title: `Welcome & Challenge Overview`,
+      description: `Receive a warm welcome and an overview of the CTF challenges and rules.`,
+      icon: 'tabler:info-circle',
+    },
+    {
+      time: '10:00 AM',
+      title: `CTF Session 1`,
+      description: `Participate in the first CTF session and test your skills against Ethereum-based puzzles.`,
+      icon: 'tabler:code',
+    },
+    {
+      time: '11:30 AM',
+      title: `Lunch Break`,
+      description: `Take a break and enjoy lunch. Recharge before the second session.`,
+      icon: 'tabler:clock',
+    },
+    {
+      time: '01:00 PM',
+      title: `CTF Session 2`,
+      description: `Dive back into solving more Ethereum challenges and earn points!`,
+      icon: 'tabler:code',
+    },
+    {
+      time: '05:00 PM',
+      title: `Challenge Review & Solutions`,
+      description: `Review the CTF challenges and learn the solutions.`,
+      icon: 'tabler:report',
+    },
+    {
+      time: '05:30 PM',
+      title: `After Party`,
+      description: `Celebrate your achievements and network at the beer party!`,
+      icon: 'tabler:beer',
+    },
+  ]}
+  classes={{ container: 'max-w-3xl' }}
+/>
+
   <Hero
     tagline="Day 3"
     title="Conference"
@@ -91,6 +185,52 @@ const metadata = {
   tabindex="0"
 ></iframe>`
   />
+  <TimeTable
+  id="conference"
+  title="Conference"
+  tagline='BigPlace(B1F), October 20th(SUN), 2024'
+  subtitle='Ethcon 2024 will bring together developers, researchers, and students from the Ethereum ecosystem to share insights, projects, and solutions. Don’t miss out on this opportunity to explore cutting-edge ideas and connect with the brightest minds in the space.'
+  items={[
+    {
+      time: '09:30 AM',
+      title: 'Registration',
+      description: `Join us to register and set up for the event.`,
+    },
+    {
+      time: '10:00 AM',
+      title: `Keynote`,
+    },
+    {
+      time: '10:30 AM',
+      title: `Talks (Part 1)`,
+      description: `Detailed agenda will be announced.`,
+    },
+    {
+      time: '01:00 PM',
+      title: `Lunch`,
+      description: `Take a break for lunch and recharge before the afternoon session.`,
+    },
+    {
+      time: '02:00 PM',
+      title: `Talks (Part 2)`,
+      description: `Detailed agenda will be announced.`,
+    },
+    {
+      time: '04:00 PM',
+      title: `Break`,
+    },
+    {
+      time: '04:30 PM',
+      title: `Talks (Part 3)`,
+      description: `Detailed agenda will be announced.`,
+    },
+    {
+      time: '06:00 PM',
+      title: `Closing Remarks`,
+    },
+  ]}
+  classes={{ container: 'max-w-3xl' }}
+/>
   <Headline title="Donation" subtitle="0xe2435548A9cdA5be4B00Da8eCBd47304Cd5c53bc" />
   <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
     <div class="flex w-full sm:w-auto">

@@ -245,6 +245,11 @@ export interface Brands extends Omit<Headline, 'classes'>, Widget {
   images?: Array<Image & { height?: number }>;
 }
 
+export interface Speakers extends Omit<Headline, 'classes'>, Widget {
+  icons?: Array<string>;
+  images?: Array<Image & { height?: number } & {title?: string }>;
+}
+
 export interface Features extends Omit<Headline, 'classes'>, Widget {
   image?: string | unknown;
   video?: Video;

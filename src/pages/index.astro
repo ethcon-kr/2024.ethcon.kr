@@ -6,6 +6,7 @@ import Brands from '~/components/widgets/Brands.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Button from '~/components/ui/Button.astro';
 import TimeTable from '~/components/widgets/TimeTable.astro';
+import Speakers from '~/components/widgets/Speakers.astro';
 
 const metadata = {
   title: 'Ethcon Korea 2024 — Ignite your Cypherpunk Vision',
@@ -230,6 +231,37 @@ const metadata = {
     },
   ]}
   classes={{ container: 'max-w-3xl' }}
+/>
+<Speakers
+title="Speakers"
+subtitle=""
+images={[
+  {
+    src: '~/assets/images/speakers/Adrian_Li.jpeg',
+    alt: 'Adrian Li',
+    title: '@ Ethereum Foundation'
+  },
+  {
+    src: '~/assets/images/speakers/AJ_Park.jpeg',
+    alt: 'Jihoon Park',
+    title: '@ Radius'
+  },
+  {
+    src: '~/assets/images/speakers/Gen_Lee.jpeg',
+    alt: 'Gen Lee',
+    title: '@ Uniswap labs'
+  },
+  {
+    src: '~/assets/images/speakers/Jack_Jin.jpg',
+    alt: 'Jack Jin',
+    title: '@ Kaia Foundation'
+  },
+  {
+    src: '~/assets/images/speakers/Jooman_Han.png',
+    alt: 'Jooman Han',
+    title: '@ a41'
+  },
+]}
 />
   <Headline title="Donation" subtitle="0xe2435548A9cdA5be4B00Da8eCBd47304Cd5c53bc" />
   <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
